@@ -1,0 +1,10 @@
+
+
+td {
+    border: 0.030em solid #000000;
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 4.5em;
+    text-align: center;
+    background: linear-gradient(#e4e4e4, #bdb5b5);
+}
