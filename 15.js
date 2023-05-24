@@ -7,7 +7,9 @@ function swap(arr, i1, j1, i2, j2) {
     arr[i2][j2] = t;
 }
 window.onload = function() {
+    box = document.getElementById("box");
     newGame();
+    document.getElementById("reset").onclick = newGame;
 }
 
 function cellClick(event) {
@@ -43,7 +45,7 @@ function newGame() {
     }
     ei = 3;
     ej = 3;
-    for (i = 0; i < 3600; ++i)
+    for (i = 0; i < 1600; ++i)
         switch (Math.round(3 * Math.random())) {
             case 0:
                 if (ei != 0) swap(arr, ei, ej, --ei, ej);
@@ -57,7 +59,6 @@ function newGame() {
             case 3:
                 if (ej != 0) swap(arr, ei, ej, ei, --ej); // left
         }
-
     var table = document.createElement("table"),
         tbody = document.createElement("tbody");
     table.appendChild(tbody);
